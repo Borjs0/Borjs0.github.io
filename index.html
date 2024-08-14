@@ -1,95 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Vision and Mission</title>
+    <title>Borjs0</title>
     <style>
-        /* Reset some default browser styles */
-        body, h1, h2, p {
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
-
-        /* Set a simple font style */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            /*background-image: url("pageBG.png");
-            background-size: cover;*/
-            background-color: #ededed;
-            color: #333;
-            padding: 20px;
-        }
-
-        /* Header styling */
         header {
-            text-align: center;
+            background-color: #333;
+            color: #fff;
             padding: 20px;
-            background-image: url("librarytopview.jpg");
-            color: white;
-            border-radius: 10px;
+            text-align: center;
         }
-
-        /* Vision and Mission section styling */
-        .vision-mission {
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .gallery {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f4f4f4;
-            margin: 20px 0;
+            flex-wrap: wrap;
+            justify-content: center;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: #000000;
         }
-
-        .vision, .mission {
-            margin-bottom: 20px;
-            max-width: 600px;
+        .gallery-item {
+            background-color: #fff;
+            margin: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: calc(33% - 40px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             text-align: center;
+            transition: transform 0.2s ease;
         }
-
-        .vision h1, .mission h1 {
-            color: #4CAF50;
-            margin-bottom: 10px;
+        .gallery-item:hover {
+            transform: scale(1.05);
         }
-
-        
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .gallery-item h2, .gallery-item p {
+            text-decoration: none;
+            color: #000000;
+            margin: 0;
+            padding: 15px;
+        }
+        .gallery-item a {
+            text-decoration: none;
+            color: #000000;
+            display: block;
+        }
+        .gallery-item a:hover, .gallery-item a:focus {
+            text-decoration: none;
+            color: inherit;
+        }
         footer {
-            text-align: left;
-            margin-top: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: right;
             padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            position: fixed;
+            /*position: fixed;*/
             width: 100%;
             bottom: 0;
         }
+        footer a {
+            color: #61dafb;
+            text-decoration: none;
+        }
     </style>
-</head>
+<style type="text/css" id="operaUserStyle"></style></head>
 <body>
+
     <header>
-    	<img src="weblogo-copy1.png" alt="ESSU Logo" style="width: 500px; height: 125px">
+        <h1>Borjs0</h1>
+        <p>CS Elective 1</p>
     </header>
-    
-    <section class="vision-mission">
-        <div class="vision">
-            <h1>Vision</h1>
-            <p>
-                A technologically-advanced university producing professionals and competitive leaders for local and national development.
-            </p>
-        </div>
-        <div class="mission">
-            <h1>Mission</h1>
-            <p>
-                To provide quality education responsive to the national and global needs focused on generating knowledge and technology that will improve the lives of the people.
-            </p>
-        </div>
+
+    <section class="gallery">
+        <!-- Repeat this block for each project -->
+        <div class="gallery-item">
+            <a href="MissionVision/MissionVision.html">
+                <img src="BJ.png" alt="Project Screenshot">
+            </a>
+            <h2>Mission Vision</h2>
+                  <p>A simple website made with HTML showcasing the School's mission and vision.</p>
+            </div>
+        <!-- End project block -->
     </section>
-    
+
     <footer>
-        <p>&copy; Arnel Borja</p>
+        <p>Contact: <a href="https://github.com/Borjs0" target="_blank">Arnel B. Borja Jr.  </a></p>
     </footer>
 </body>
 </html>
